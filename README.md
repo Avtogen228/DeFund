@@ -8,17 +8,17 @@
 
 `defundd q bank balances YOUR_WALLET_ADDRESS` to check your balance
 
-`defundd tx staking create-validator \  
---amount=1000000ufetf \  
---pubkey=$(defundd tendermint show-validator) \  
---moniker="$DEFUND_NODENAME" \  
---chain-id=defund-private-1 \  
---commission-rate="0.10" \  
---commission-max-rate="0.20" \  
---commission-max-change-rate="0.01" \  
---min-self-delegation="1000000" \  
---gas="auto" \  
---from=wallet  ` to create a validator
+`defundd tx staking create-validator \`  
+`--amount=1000000ufetf \`      
+`--pubkey=$(defundd tendermint show-validator) \`    
+`--moniker="$DEFUND_NODENAME" \`    
+`--chain-id=defund-private-1 \`  
+`--commission-rate="0.10" \`  
+`--commission-max-rate="0.20" \`  
+`--commission-max-change-rate="0.01" \`  
+`--min-self-delegation="1000000" \`  
+`--gas="auto" \`  
+`--from=wallet  ` to create a validator
 
 `journalctl -u defund -f` to check node logs
 
